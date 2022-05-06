@@ -2,7 +2,7 @@
 
 <head>
     <title>
-        <*Title*>
+        Title
     </title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
@@ -208,100 +208,12 @@
 
                             <p class="title">امروز</p>
                             <div class="menu">
-                                <SCRIPT language=javascript type=text/javascript>
-now = new Date
-if (now.getHours() < 5) {
-document.write("نصف شب بخير")
-}
-else if (now.getHours() < 11) {
-document.write("صبح  بخير")
-}
-else if (now.getHours() < 15) {
-document.write("ظهر بخير")
-}
-else if (now.getHours() < 20) {
-document.write("عصر بخير")
-}
-else if (now.getHours() < 24) {
-document.write("شب بخير")
-}
-</script>
+                               
                             </div><br />
                             <div class="menu">
-                                <SCRIPT>
-                                    function showdate() {
-                                        week = new Array("يكشنبه", "دوشنبه", "سه شنبه", "چهارشنبه", "پنج شنبه", "جمعه", "شنبه")
-                                        months = new Array("فروردين", "ارديبهشت", "خرداد", "تير", "مرداد", "شهريور", "مهر", "آبان", "آذر", "دي", "بهمن", "اسفند");
-                                        a = new Date();
-                                        d = a.getDay();
-                                        day = a.getDate();
-                                        month = a.getMonth() + 1;
-                                        year = a.getYear();
-
-                                        year = (year == 0) ? 2000 : year;
-                                        (year < 1000) ? (year += 2000) : true;
-
-                                        year -= ((month < 3) || ((month == 3) && (day < 21))) ? 622 : 621;
-
-                                        switch (month) {
-                                            case 1: (day < 21) ? (month = 10, day += 10) : (month = 11, day -= 20); break;
-                                            case 2: (day < 20) ? (month = 11, day += 11) : (month = 12, day -= 19); break;
-                                            case 3: (day < 21) ? (month = 12, day += 9) : (month = 1, day -= 20); break;
-                                            case 4: (day < 21) ? (month = 1, day += 11) : (month = 2, day -= 20); break;
-                                            case 5:
-                                            case 6: (day < 22) ? (month -= 3, day += 10) : (month -= 2, day -= 21); break;
-                                            case 7:
-                                            case 8:
-                                            case 9: (day < 23) ? (month -= 3, day += 9) : (month -= 2, day -= 22); break;
-                                            case 10: (day < 23) ? (month = 7, day += 8) : (month = 8, day -= 22); break;
-                                            case 11:
-                                            case 12: (day < 22) ? (month -= 3, day += 9) : (month -= 2, day -= 21); break;
-                                            default: break;
-                                        }
-                                        document.write(week[d] + " " + day + " " + months[month - 1] + " " + year);
-                                    }
-                                </SCRIPT>
-
-                                <SCRIPT>showdate()</SCRIPT>
+                                
                             </div><br />
-                            <SCRIPT LANGUAGE="JavaScript">
-
-                                var timerID = null;
-                                var timerRunning = false;
-
-                                function stopclock() {
-                                    if (timerRunning)
-                                        clearTimeout(timerID);
-                                    timerRunning = false;
-                                }
-
-                                function showtime() {
-                                    var now = new Date();
-                                    var hours = now.getHours();
-                                    var minutes = now.getMinutes();
-                                    var seconds = now.getSeconds()
-
-                                    var timeValue = "" + ((hours > 12) ? hours - 12 : hours)
-                                    timeValue += ((minutes < 10) ? ":0" : ":") + minutes
-                                    timeValue += ((seconds < 10) ? ":0" : ":") + seconds
-                                    timeValue += (hours >= 12) ? " P.M." : " A.M."
-                                    document.clock.face.value = timeValue;
-
-                                    // you could replace the above with this
-                                    // and have a clock on the status bar:
-                                    // window.status = timeValue;
-
-                                    timerID = setTimeout("showtime()", 1000);
-                                    timerRunning = true;
-                                }
-
-                                function startclock() {
-                                    // Make sure the clock is stopped
-                                    stopclock();
-                                    showtime();
-                                }
-
-                            </SCRIPT>
+                           
                             <div class="menu">
                                 <form name="clock" onSubmit="0">
                                     <input type="text" name="face" size=13 value="">
@@ -340,20 +252,16 @@ document.write("شب بخير")
                             <div class="menu">
                                 <a href="#">صفحه نخست</a><br>
                                 <a href="#">پست الکترونيک</a><br>
-                                <span class=smeno id="profmeno" onmouseover=dochngbacove(profmeno)
-                                    onmouseout=dochngbacout(profmeno) onmousedown=dochngbaccli(profmeno)
-                                    onmouseup=dochngbacout(profmeno)>
+                                <span class=smeno id="profmeno">
                                     <*ProfileLink*> شناسنامه
                                         </a>
                                 </span>
                                 <br>
-                                <span class=smeno id="rssmeno" onmouseover=dochngbacove(rssmeno)
-                                    onmouseout=dochngbacout(rssmeno) onmousedown=dochngbaccli(rssmeno)
-                                    onmouseup=dochngbacout(rssmeno)>
+                                <span class=smeno id="rssmeno" >
                                     <*RSS*>
                                 </span><br>
                                 <YI_P><a href="#" title="وضعيت من در ياهو"> در ياهو <img border=0
-                                            style="width:0;" onload="this.style.width='';" align=center>
+                                            style="width:0;" align=center>
                                     </a><br><br />
                             </div>
                             </YI_P>
@@ -416,20 +324,6 @@ document.write("شب بخير")
                                         style="BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid"
                                         align=absMiddle vspace=5><br />
                                     <br>
-                                    <span id=inbologo>
-                                        <input id=LogoUrl
-                                            value='<A href="#" target=_blank><img width=0 onload="this.width=110; this.style.borderWidth=1" style="border:0 black solid" align=absmiddle vspace=5></A>'
-                                            style="width:100"
-                                            onfocus="this.style.borderColor='maroon'; this.style.backgroundColor='#FFFAED'; this.select()"
-                                            onblur="this.style.borderColor='gray'; this.style.backgroundColor='#F5F5F5'"
-                                            autocomplete=off contenteditable=true NAME="LogoUrl"><br>
-                                        <Div style=" background-color:E0FFE0; border: 1 #b0bbcf solid;  width:100; height:20px; cursor:hand"
-                                            title="ارسال محتواي جعبه‏متن به كليپ‏بورد" onclick='toClip(LogoUrl.value)'>
-                                        </Div>
-                                        <Div style="background-color:F8FFF0; border: 1 #b0bbcf solid; border-width:1; width:100; height:10px; cursor:hand"
-                                            title="ارسال نشاني لوگو به كليپ‏بورد")'>
-                                        </Div>
-                                    </span>
                                 </div>
                                 <br><br /><br /><br />
                             </YL_P>
@@ -440,12 +334,7 @@ document.write("شب بخير")
                                 <p class="title">پيوندهاي روزانه<br></p>
                                 <div class="menu">
                                     <*DayList*><br>
-                                        <input id=dlsrc
-                                            value="<iframe frameborder=1 width=100% height=200px scrolling=auto></iframe>"
-                                            style="width:110" onfocus="this.select()" autocomplete=off
-                                            contenteditable=true />
-                                        <input type="button" value="C" title="کپي آدرس لينک باکس" style="cursor:hand"
-                                            onclick=toClip(dlsrc.value);>
+                                       
                                         <br><br />
                                 </div>
                             </DL_P>
@@ -455,9 +344,7 @@ document.write("شب بخير")
                                 <br>
                                 <p class="title"> پيوندها<br></p>
                                 <div class="menu">
-                                    <marquee style="padding-right:10px;" width="140" height="200" dir=rtl scrolldelay=1
-                                        scrollamount=2 direction="up" onmouseover='this.scrollAmount=0;'
-                                        onmouseout='this.scrollAmount=2;'>
+                                   
                                         <*GuestsList*>
                                     </marquee>
                                     <br>
@@ -469,8 +356,6 @@ document.write("شب بخير")
                                 <p class="title"> لوگوي دوستان<br></p>
                                 <div class="menu">
                                     <div align="center">
-                                        <MARQUEE width="140" onmouseover=this.stop() onmouseout=this.start()
-                                            scrollamount="1" scrolldelay="1" direction=up height="200" align="middle">
                                             <center>
                                                 <*LogoGuestsList*>
                                             </center>
@@ -484,10 +369,7 @@ document.write("شب بخير")
                                 <br>
                                 <p class="title">موسيقي وبلاگ<br></p>
                                 <div class="menu">
-                                    <embed style="border:1 black solid; background-color:#000000;"
-                                        title="!در حال خواندن وبلاگ من، موسيقي مورد علاقه‏ام را بشنويد" width="130"
-                                        height="50" type="application/x-mplayer2" autostart="true" loop="true"
-                                        SHOWSTATUSBAR="1" ShowPositionControls="0"></embed>
+                                   
                                     <br>
                                 </div>
                             </MS_P>
@@ -505,12 +387,7 @@ document.write("شب بخير")
                             <br>
                             <p class="title">جستجو در وبلاگ<br></p>
                             <div class="menu">
-                                جستجو: <input lang=fa
-                                    style="width:93; text-align:right; font-family:tahoma; padding-top:0"
-                                    onfocus="this.style.borderColor='maroon'; this.style.backgroundColor='#FFFAED'; this.select()"
-                                    onblur="this.style.borderColor='gray'; this.style.backgroundColor='#F5F5F5'"
-                                    onkeypress="if (event.keyCode==13){ document.all.besearchgif.click(); return false; }"
-                                    id=besearch NAME="besearch">
+                                جستجو: 
                                 
                                 <br /><br /><br />
                             </div>
