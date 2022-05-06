@@ -1,0 +1,528 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+    <title>
+        <*Title*>
+    </title>
+    <style>
+        BODY {
+            background: #670104 url('./images/bg.gif');
+            padding: 0px 0px;
+            margin: 0;
+            FONT-SIZE: 12pt;
+            MARGIN: 0;
+            LINE-HEIGHT: 130%;
+            FONT-FAMILY: tahoma, ;
+            color: #000000;
+            scrollbar-3dlight-color: #d1d7dc;
+            scrollbar-arrow-color: #ffffff;
+            scrollbar-darkshadow-color: #98aab1;
+            scrollbar-face-color: #680104;
+            scrollbar-highlight-color: #ffffff;
+            scrollbar-shadow-color: #dee3e7;
+            scrollbar-track-color: #B1585A
+        }
+
+        .GuestLogo {
+            width: 110px;
+            margin: 5px;
+            border: 1px black solid;
+            text-align: absmiddle;
+        }
+
+        .GuestList {
+            font-family: tahoma;
+            font-size: 12;
+        }
+
+        input {
+            border: 1px #B99F86 solid;
+            font-family: tahome;
+            font-size: 12;
+            padding: 1px;
+            height: 20px;
+        }
+
+        A {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 8pt;
+            MARGIN: 0px;
+            COLOR: #B1585A;
+            LINE-HEIGHT: 150%;
+            FONT-FAMILY: tahoma, sans-serif;
+            TEXT-DECORATION: none
+        }
+
+        A:visited {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 8pt;
+            MARGIN: 0px;
+            COLOR: #722426;
+            LINE-HEIGHT: 150%;
+            FONT-FAMILY: tahoma, tahoma, sans-serif;
+            TEXT-DECORATION: none
+        }
+
+        .title A {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 8pt;
+            MARGIN: 0px;
+            COLOR: #ffffff;
+            LINE-HEIGHT: 150%;
+            FONT-FAMILY: tahoma, sans-serif;
+            TEXT-DECORATION: none
+        }
+
+        .title A:visited {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 8pt;
+            MARGIN: 0px;
+            COLOR: #ffffff;
+            LINE-HEIGHT: 150%;
+            FONT-FAMILY: tahoma, tahoma, sans-serif;
+            TEXT-DECORATION: none
+        }
+
+        A:hover {
+            COLOR: #3A0A0A
+        }
+
+        A:visited:hover {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 8pt;
+            MARGIN: 0px;
+            COLOR: #000000;
+            LINE-HEIGHT: 150%;
+            FONT-FAMILY: tahoma, tahoma, sans-serif;
+            TEXT-DECORATION: none
+        }
+
+        P {
+            direction: rtl;
+            font-family: tahoma;
+            font-size: 12;
+            line-height: 1.6;
+            margin: 0px;
+        }
+
+        #mainkadr {
+            margin: 0px;
+        }
+
+        #ldiv {
+            margin: 2px;
+            border: 0px solid red;
+            font-family: tahoma;
+            float: left;
+
+        }
+
+        #rdiv {
+            margin: 2px;
+            padding-left: 7px;
+            margin-right: 0px;
+            background-attachment: fixed;
+            background-repeat: repeat-x;
+            border: 0px solid #B99F86;
+            font-family: tahoma;
+            float: right;
+        }
+
+        .tkadr {
+            background-color: #b0bbcf;
+            color: #ffffff;
+            font-family: tahoma;
+            font-size: 12;
+            text-align: center;
+            direction: rtl;
+        }
+
+        #bottomkadr {
+            font-family: tahoma;
+            font-size: 10;
+            direction: rtl;
+            border: 1px #B99F86 solid;
+            padding: 3px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .bodykadr {
+            border: 1px #B99F86 solid;
+            font-family: tahoma;
+            font-size: 12;
+            background-attachment: fixed;
+            LINE-HEIGHT: 130%;
+            direction: rtl;
+            border-top: 0px;
+            padding: 5px;
+            width: 100%;
+        }
+
+        .titr {
+            border: 1px #B99F86 solid;
+            font-size: 12;
+            font-family: tahoma;
+            background-attachment: fixed;
+            background-repeat: repeat-x;
+            LINE-HEIGHT: 130%;
+            direction: rtl;
+            text-align: center;
+            color: #000000;
+            height: 28px;
+            padding: 2px;
+            width: 100%;
+
+        }
+
+        #ltitr {
+            FONT-SIZE: 22pt;
+            margin: 5px;
+            background-attachment: fixed;
+            background-repeat: repeat-x;
+            LINE-HEIGHT: 130%;
+            FONT-FAMILY: titr, badr, zar, koodak, mitra, tahoma;
+            text-align: center;
+            border: 2px #B99F86 solid;
+            padding: 5px;
+            height: 90px;
+            direction: rtl;
+        }
+
+        .smeno {
+            padding: 2px;
+            float: right;
+            border: 1px #B99F86 solid;
+            font-family: tahoma;
+            font-size: 11;
+            height: 25px;
+            background-attachment: fixed;
+            background-repeat: repeat-x;
+            cursor: hand;
+            color: #113766;
+            margin: 2px;
+        }
+
+        .smallfont {
+            color: #B1585A;
+        }
+
+        .sbot {
+            height: 18px;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-size: 1pt;
+            margin-left: 5px;
+            margin-top: -23px;
+            cursor: hand;
+        }
+
+        #marqu {
+            border: 1px #B99F86 solid;
+            FONT-SIZE: 11pt;
+            background-attachment: fixed;
+            background-repeat: repeat-x;
+            FONT-FAMILY: koodak, mitra, tahoma;
+            color: #000000;
+            height: 28 px;
+            padding: 2 px;
+            direction: rtl;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <div class="theme" style="width:900px">
+            <div class="header"
+                style="width:900px;height:377px;background:url('./images/1.jpg') no-repeat left top">
+                <br><br><br>
+
+            </div>
+            <div class="footer"
+                style="padding-bottom:236px;background:url('./images/6.gif') no-repeat center bottom">
+                <div class="footer"
+                    style="background:url('http://gapple.persiangig.com/image/jazromad/5.gif') repeat-y right top">
+                    <div class="footer"
+                        style="padding-left:101px;padding-right:76px;background:url('http://gapple.persiangig.com/image/jazromad/4.gif') repeat-y left top">
+                        <div class="post" align="center" style="background:#f5e8d7;">
+                            <table style="padding-top:30px" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td dir="rtl" valign="top" width="550">
+                                        <*ParsiBlog*>
+                                            <div style="text-align:right;border:none" class="titr">
+                                                <li></li>
+                                                <font class="title" style="background-color:#B1585A;color:#ffffff">
+                                                    <b>&nbsp;<*NoteTitle*>&nbsp;</b></font>
+                                            </div>
+                                            <div class="sbot" style="position:absolute;" onclick="doall()"
+                                                onmouseover="this.style.backgroundPositionY='-20px';"
+                                                onmouseout="this.style.backgroundPositionY='0px';"
+                                                onmouseup="this.style.backgroundPositionY='0px';"
+                                                onmousedown="this.style.backgroundPositionY='-40px';"></div>
+                                            <div style="border:none" class="bodykadr">
+                                                <*NoteText*>
+                                                    <br>
+                                                    <div style="text-align:right">
+                                                        <small class=smallfont>
+                                                            <*YourName*> ::: <*NoteDate:3*>::: <*NoteTime:2*>
+                                                        </small>
+                                                    </div>
+                                                    <div>
+                                                        <div style="text-align:right;margin:0px;padding:0px">
+                                                            <*NoteHitLink*> نظرات ديگران: <*NoteHit*></A> نظر
+                                                        </div>
+
+                                                    </div>
+                                            </div>
+                                            <hr color="#B1585A">
+                                            <br>
+                                        </*ParsiBlog* />
+                                        <TL_P>
+                                            <div class="titr" style="text-align:right;border:none">
+                                                <b>ليست كل يادداشت هاي اين وبلاگ</b>
+                                            </div>
+                                            <div class="sbot" style="position:absolute;" onclick="doall()"
+                                                onmouseover="this.style.backgroundPositionY='-20px';"
+                                                onmouseout="this.style.backgroundPositionY='0px';"
+                                                onmouseup="this.style.backgroundPositionY='0px';"
+                                                onmousedown="this.style.backgroundPositionY='-40px';"></div>
+                                            <div style="border:none" class="bodykadr">
+                                                <*TitleList*>
+                                            </div>
+                                            <br>
+                                        </TL_P>
+                        </div>
+                        </td>
+                        <td width="20"></td>
+                        <td width="150" dir="rtl" valign="top">
+                            <div id=menos style="margin-top:-23;text-align:center" dir=rtl>
+                                <center>
+
+                                    <span style="width:150px" class=smeno id="emaimeno">
+                                        <A href="mailto:<*YourEmail*>"> پست الكترونيك</A></span>
+                                    <span style="width:150px" class=smeno id="parmeno"><a
+                                            href=http://jazromad.parsiblog.com/ title="home" target=_blank>صفحه نخست
+                                        </a></span>
+                                    <YI_P><span style="width:150px" class=smeno id="yahoomeno">
+                                            <a href="ymsgr:sendim?<*YahooID*>" title="وضعيت من در ياهو"> در ياهو <img
+                                                    border=0
+                                                    src="http://opi.yahoo.com/online?u=<*YahooID*> &amp;m=g&amp;t=0"
+                                                    style="width:0;" onload="this.style.width='';" align=center>
+                                            </a></span></YI_P>
+                                    <span style="width:150px" class=smeno id="profmeno">
+                                        <*ProfileLink*> شناسنامه
+                                            </a>
+                                    </span><span style="width:150px" class=smeno id="rssmeno">
+                                        <*RSS*>
+                                    </span>
+                                </center>
+                            </div>
+                            <div id="ldiv" align=left>
+                                <div class=titr> >> نظر سنجي <<< /div>
+                                        <div class="bodykadr" style="text-align:center">
+                                            <!-- Begin WebGozar.com Poll code -->
+                                            <script language="javascript"
+                                                src="http://www.webgozar.ir/c.aspx?Code=313800&amp;t=poll"></script>
+                                            <!-- End WebGozar.com Poll code -->
+                                        </div>
+                                        <br>
+                                        <div id="ldiv" align=left>
+                                            <div class=titr> >> بازديدهاي وبلاگ <<< /div>
+                                                    <div class="bodykadr" style="text-align:center">
+                                                        بازديد امروز: <font color="#B1585A">
+                                                            <*DailyHit*>
+                                                        </font>
+                                                        <hr>
+                                                        بازديد ديروز: <font color="#B1585A">
+                                                            <*YesHit*>
+                                                        </font>
+                                                        <hr>
+                                                        كل بازديد :<font color="#B1585A">
+                                                            <*WebLogHit*>
+                                                        </font>
+                                                    </div>
+                                                    <br>
+                                                    <div class=titr> >>اوقات شرعي <<< /div>
+                                                            <div class="bodykadr" style="text-align:center">
+                                                                <iframe
+                                                                    src="http://AzanTimes.parsiblog.com/Times.aspx?CityID=26&Bcolor=#fff0f5&Mcolor=darkgreen&Tcolor=red&Acolor=#B1585A"
+                                                                    frameborder=0 width=100% height=17px
+                                                                    scrolling=no></iframe>
+                                                            </div>
+                                                            <br>
+
+
+                                                            <AU_P>
+                                                                <div class=titr> >> درباره خودم <<< /div>
+                                                                        <div class="bodykadr" style="text-align:center">
+                                                                            <*ProfileLink*> <img width="110"
+                                                                                    onerror="this.style.width='0';this.style.border='0'"
+                                                                                    src="<*PhotoSRC*>"
+                                                                                    style="border:1 black solid"
+                                                                                    align=absmiddle alt="<*Title*>"
+                                                                                    vspace=5></a>
+                                                                                <div style="width:95%;font-family:tahoma;font-size:11;text-align:justify;line-height:1.7"
+                                                                                    dir=rtl>
+                                                                                    <*AboutUs*>
+                                                                                </div>
+                                                                        </div>
+                                                                        <br>
+                                                            </AU_P>
+                                                            <DL_P>
+                                                                <div class=titr> >> پيوندهاي روزانه <<< /div>
+                                                                        <div class="bodykadr" style="text-align:center">
+                                                                            <*DayList*><br>
+                                                                                <input id=dlsrc
+                                                                                    value="<iframe src=http://<*YourSiteName*>.ParsiBlog.com/links frameborder=1 width=100% height=200px scrolling=auto></iframe>"
+                                                                                    style="width:110"
+                                                                                    onfocus="this.select()"
+                                                                                    autocomplete=off
+                                                                                    contenteditable=true />
+                                                                                <input type="button" value="C"
+                                                                                    title="کپي آدرس لينک باکس"
+                                                                                    style="cursor:hand"
+                                                                                    onclick=toClip(dlsrc.value);>
+                                                                        </div>
+                                                                        <br>
+                                                            </DL_P>
+                                                            <WS_P>
+                                                                <div class=titr> >> موضوعات وبلاگ <<< /div>
+                                                                        <div class="bodykadr" style="text-align:center">
+                                                                            <*WeblogSubject*>
+                                                                        </div>
+                                                                        <br>
+                                                            </WS_P>
+
+                                                            <YL_P>
+                                                                <div class=titr> >>لوگوي وبلاگ من<<< /div>
+                                                                        <div class="bodykadr" style="text-align:center">
+                                                                            <img width=92
+                                                                                onerror="this.style.display='none'; document.all.inbologo.style.display='none'"
+                                                                                src="http://gapple.persiangig.com/image/jazromad/logo.gif"
+                                                                                style="BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid"
+                                                                                align=absMiddle alt="<*Title*>"
+                                                                                vspace=5>
+                                                                            <br>
+                                                                            <span id=inbologo>
+                                                                                <input id=LogoUrl
+                                                                                    value='<A href="http://<*YourSiteName*>.parsiblog.com" target=_blank><img width=0 onload="this.width=92; this.style.borderWidth=1" src="http://gapple.persiangig.com/image/jazromad/logo.gif" style="border:0 black solid" align=absmiddle alt="<*Title*>" vspace=5></A>'
+                                                                                    style="width:100"
+                                                                                    onfocus="this.style.borderColor='maroon'; this.style.backgroundColor='#FFFAED'; this.select()"
+                                                                                    onblur="this.style.borderColor='gray'; this.style.backgroundColor='#F5F5F5'"
+                                                                                    autocomplete=off
+                                                                                    contenteditable=true NAME="LogoUrl">
+                                                                                <Div style="position:absolute; background-color:E0FFE0; border: 1 #b0bbcf solid; overflow:hidden; width:6; height:6px; margin-right:-102; cursor:hand"
+                                                                                    title="ارسال محتواي جعبه‏متن به كليپ‏بورد"
+                                                                                    onclick='toClip(LogoUrl.value)'>
+                                                                                </Div>
+                                                                                <Div style="position:absolute; background-color:F8FFF0; border: 1 #b0bbcf solid; border-width:1; overflow:hidden; width:6; height:6px; margin-right:-94; cursor:hand"
+                                                                                    title="ارسال نشاني لوگو به كليپ‏بورد"
+                                                                                    onclick='toClip("<*YourLogoURL*>")'>
+                                                                                </Div>
+                                                                            </span>
+
+                                                                        </div>
+                                                                        <br>
+                                                            </YL_P>
+                                                            <GL_P>
+                                                                <div class=titr> >>لينك دوستان<<< /div>
+                                                                        <div class="bodykadr"
+                                                                            style="text-align:center;padding-right:3px">
+                                                                            <marquee direction="up" width="134px"
+                                                                                height="150px" scrolldelay="30"
+                                                                                scrollamount="1" onmouseover="stop();"
+                                                                                onmouseout="start();">
+                                                                                <center>
+                                                                                    <*GuestsList*>
+                                                                                </center>
+                                                                            </marquee>
+
+                                                                        </div>
+                                                                        <br>
+                                                            </GL_P>
+                                                            <LGL_P>
+                                                                <div class=titr> >>لوگوي دوستان<<< /div>
+                                                                        <div class="bodykadr"
+                                                                            style="text-align:center;padding-right:3px">
+                                                                            <marquee direction="up" width="134px"
+                                                                                height="150px" scrolldelay="30"
+                                                                                scrollamount="1" onmouseover="stop();"
+                                                                                onmouseout="start();">
+                                                                                <center>
+                                                                                    <*LogoGuestsList*>
+                                                                                </center>
+                                                                            </marquee>
+                                                                        </div>
+                                                                        <br>
+                                                            </LGL_P>
+                                                            <MS_P>
+                                                                <div class=titr> >>موسيقي وبلاگ<<< /div>
+                                                                        <div class="bodykadr" style="text-align:center">
+                                                                            <embed src="<*MusicSRC*>"
+                                                                                style="border:1 black solid; background-color:#000000;"
+                                                                                title="!در حال خواندن وبلاگ من، موسيقي مورد علاقه‏ام را بشنويد"
+                                                                                width="130" height="50"
+                                                                                type="application/x-mplayer2"
+                                                                                autostart="true" loop="true"
+                                                                                SHOWSTATUSBAR="1"
+                                                                                ShowPositionControls="0"></embed>
+                                                                        </div>
+                                                                        <br>
+                                                            </MS_P>
+                                                            <SL_P>
+                                                                <div class=titr> >> فهرست موضوعي يادداشت ها <<< /div>
+                                                                        <div class="bodykadr" style="text-align:center">
+                                                                            <*NoteSubList*>
+                                                                        </div>
+                                                                        <br>
+                                                            </SL_P>
+                                                            <AR_P>
+                                                                <div class=titr> >>آرشيو شده ها<<< /div>
+                                                                        <div class="bodykadr" style="text-align:center">
+                                                                            <*Archive*>
+                                                                        </div>
+                                                                        <br>
+                                                            </AR_P>
+                                                            <div class=titr> >>جستجو در وبلاگ<<< /div>
+                                                                    <div class="bodykadr" style="text-align:center">
+                                                                        جستجو: <input lang=fa
+                                                                            style="width:93; text-align:right; font-family:tahoma; padding-top:0"
+                                                                            onfocus="this.style.borderColor='maroon'; this.style.backgroundColor='#FFFAED'; this.select()"
+                                                                            onblur="this.style.borderColor='gray'; this.style.backgroundColor='#F5F5F5'"
+                                                                            onkeypress="if (event.keyCode==13){ document.all.besearchgif.click(); return false; }"
+                                                                            id=besearch NAME="besearch"><img
+                                                                            src=http://www.parsiblog.com/IMGs/arr_whois.gif
+                                                                            border=0
+                                                                            style="cursor:hand; position:absolute; margin-top:13; margin-left:-5"
+                                                                            onclick='srchWIN("Search.aspx",document.all.besearch.value,"<*YourSiteName*>")'
+                                                                            id=besearchgif>
+
+                                                                    </div>
+                                                                    <br>
+                                                                    <div class=titr> >>اشتراك در خبرنامه<<< /div>
+                                                                            <div class="bodykadr"
+                                                                                style="text-align:center">
+                                                                                <*SubmitMail*>
+                                                                            </div><br>
+                                                                            <div class=titr> >>طراح قالب<<< /div>
+                                                                                    <div class="bodykadr"
+                                                                                        style="text-align:center">
+                                                                                        <a href="http://gapplle.com">Green
+                                                                                            Apple</a>
+                                                                                    </div>
+
+                        </td>
+                        </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
