@@ -171,53 +171,9 @@
             
         }
     </style>
-    <SCRIPT language=JavaScript>
-        var NS4 = (document.layers);
-        var IE4 = (document.all);
-        var win = window;
-        var n = 0;
-        function findInPage(str) {
-            var txt, i, found;
-            if (str == "")
-                return false;
-            if (NS4) {
-                if (!win.find(str))
-                    while (win.find(str, false, true))
-                        n++;
-                else
-                    n++;
-                if (n == 0)
-                    alert("Not found.");
-            }
-            if (IE4) {
-                txt = win.document.body.createTextRange();
-                for (i = 0; i <= n && (found = txt.findText(str)) != false; i++) {
-                    txt.moveStart("character", 1);
-                    txt.moveEnd("textedit");
-                }
-                if (found) {
-                    txt.moveStart("character", -1);
-                    txt.findText(str);
-                    txt.select();
-                    txt.scrollIntoView();
-                    n++;
-                }
-                else {
-                    if (n > 0) {
-                        n = 0;
-                        findInPage(str);
-                    }
-                    else
-                        alert("ببخشيد... كلمه اي كه نوشتي تو وبلاگ نيست");
-                }
-            }
-            return false;
-        }
-    </SCRIPT>
 </head>
 
-<body onLoad="startclock(); timerONE=window.setTimeout" onload="window_onload()"
-    background="./images/bg.gif">
+<body background="./images/bg.gif">
 
     <table height="1000" align="center" cellpadding="0" cellspacing="0" width="779">
         <tr>
@@ -422,9 +378,6 @@ document.write("شب بخير")
                             <br>
                             <p class="title"> اوقات شرعي<br></p>
                             <div class="menu">
-                                <iframe
-                                    src="http://AzanTimes.parsiblog.com/Times.aspx?CityID=26&Bcolor=#fff0f5&Mcolor=darkgreen&Tcolor=red&Acolor=blue"
-                                    frameborder=0 width=70% height=17px scrolling=no></iframe><br>
                                 <br />
                             </div>
 
@@ -580,8 +533,7 @@ document.write("شب بخير")
 
                                 <br>
                                 <center><a
-                                        style="color: #6e3900; text-decoration: none; font-family: Arial; font-size: 8pt; border: 1px solid #FF9955;  background-color: #fad698"
-                                        href="<-BlogXmlLink->">&nbsp;RSS&nbsp;</a></center><br><br>
+                                        style="color: #6e3900; text-decoration: none; font-family: Arial; font-size: 8pt; border: 1px solid #FF9955;  background-color: #fad698">&nbsp;RSS&nbsp;</a></center><br><br>
                             </div>
 
 
