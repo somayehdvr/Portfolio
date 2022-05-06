@@ -1,0 +1,690 @@
+<html>
+
+<head>
+    <title>
+        <*Title*>
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <style>
+        BODY {
+            scrollbar-face-color: #3C0101;
+            scrollbar-highlight-color: #000000;
+            scrollbar-shadow-color: #ffffff;
+            scrollbar-3dlight-color: #ffffff;
+            scrollbar-arrow-color: #ffffff;
+            scrollbar-track-color: #E6E7E8;
+            scrollbar-darkshadow-color: #cccccc;
+            padding: 0px 0px;
+            margin: 0px;
+            font-family: Tahoma;
+            font-size: 8pt;
+            color: #000000;
+            background-color: #EBF0FA;
+            text-align: center;
+        }
+
+        .title {
+            width: 127px;
+            height: 23px;
+            background: url(./images/3.gif);
+            text-align: center;
+            font-size: 8pt;
+            font-family: Tahoma;
+            line-height: 150%;
+            direction: rtl;
+        }
+
+        .HeaderBox {
+            height: 55px;
+            color: white;
+            ;
+            background-color: #8BA6E4;
+            direction: rtl;
+        }
+
+        .BlogTitle {
+            font-family: Arial;
+            font-size: 18pt;
+            font-weight: bold;
+            padding-top: 12px;
+            padding-bottom: 10px
+        }
+
+        .BlogTitle A:link {
+            color: #000099;
+            text-decoration: none;
+            color: white
+        }
+
+        .BlogTitle A:visited {
+            color: #000099;
+            text-decoration: none;
+            color: white
+        }
+
+        .BlogTitle A:hover {
+            color: #ff0000;
+            text-decoration: none;
+            color: white
+        }
+
+
+        .BlogSubTitle {
+            height: 20px;
+            background-color: #CDD9F3;
+            color: black;
+            font-family: Tahoma;
+            font-size: 9pt;
+            padding-bottom: 6px
+        }
+
+        .Container {
+            padding: 1px;
+            color: #000000;
+            text-align:right;
+            direction: rtl;
+        }
+
+        .menu {
+            padding-right: 10px;
+            color: #E6E7E8;
+            float: right;
+            text-align: right;
+            font-size: 8pt;
+            font-family: Tahoma;
+            line-height: 150%;
+            direction: rtl;
+        }
+
+        .Sidebar {
+            font-size: 8pt;
+            font-family: Tahoma;
+            line-height: 150%;
+            width: 180px;
+            float: left;
+            text-align: right;
+            direction: rtl;
+        }
+
+        .PostTitle {
+            font-size: 9pt;
+            font-family: Tahoma;
+            font-weight: bold;
+            color: #015189;
+            padding-top: 6px;
+            padding-bottom: 2px;
+        }
+
+        .PostTitle A:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        .PostTitle A:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        .PostTitle A:hover {
+            color: navy;
+            text-decoration: none;
+        }
+
+
+
+        .PostBody {
+            padding-right: 5px;
+            font-size: 9pt;
+            font-family: Tahoma;
+            color: #015189;
+            padding-top: 1px;
+            padding-bottom: 2px;
+            line-height: 1.5em;
+        }
+
+        .postdesc {
+            font-size: 7pt;
+            font-family: Tahoma;
+            color: #012A46;
+        }
+
+        .postdesc A {
+            font-size: 8pt;
+            font-family: Tahoma;
+        }
+
+
+        A:link {
+            color: #53B6E7;
+            text-decoration: none;
+        }
+
+        A:visited {
+            color: #015189;
+            text-decoration: none;
+        }
+
+        A:hover {
+            color: #C5181F;
+            text-decoration:none;
+            
+        }
+    </style>
+    <SCRIPT language=JavaScript>
+        var NS4 = (document.layers);
+        var IE4 = (document.all);
+        var win = window;
+        var n = 0;
+        function findInPage(str) {
+            var txt, i, found;
+            if (str == "")
+                return false;
+            if (NS4) {
+                if (!win.find(str))
+                    while (win.find(str, false, true))
+                        n++;
+                else
+                    n++;
+                if (n == 0)
+                    alert("Not found.");
+            }
+            if (IE4) {
+                txt = win.document.body.createTextRange();
+                for (i = 0; i <= n && (found = txt.findText(str)) != false; i++) {
+                    txt.moveStart("character", 1);
+                    txt.moveEnd("textedit");
+                }
+                if (found) {
+                    txt.moveStart("character", -1);
+                    txt.findText(str);
+                    txt.select();
+                    txt.scrollIntoView();
+                    n++;
+                }
+                else {
+                    if (n > 0) {
+                        n = 0;
+                        findInPage(str);
+                    }
+                    else
+                        alert("ببخشيد... كلمه اي كه نوشتي تو وبلاگ نيست");
+                }
+            }
+            return false;
+        }
+    </SCRIPT>
+</head>
+
+<body onLoad="startclock(); timerONE=window.setTimeout" onload="window_onload()"
+    background="./images/bg.gif">
+
+    <table height="1000" align="center" cellpadding="0" cellspacing="0" width="779">
+        <tr>
+            <td height="100%" width="144">
+                <table width="144" height="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="144" height="190" valign="top"
+                            style="padding-left:3px;background-position: right;background-repeat: no-repeat;"
+                            background="./images/1-1.gif">
+                            <center><a href="http://ecom.parsiyar.com"><img alt="مدير وبلاگ : علي" width="50"
+                                        height="50" src="http://www.parsiblog.com/PhotoAlbum/ecom/Thumb_165.jpg"></a>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><map name="s">
+                                <area alt="صفحه نخست" shape="poly" coords="51,32,51,45,68,49,72,39,65,25"
+                                    href="http://<*YourSiteName*>.parsiblog.com">
+                                <area alt="ايميل" shape="poly" coords="93,61,90,72,75,71,76,61"
+                                    href="mailto:<*YourEmail*>">
+                                <area alt="آرشيو" shape="poly" coords="76,43,82,54,69,64,61,50" href="archive">
+                            </map>
+                            <img src="./images/1-2.gif" width="144" height="124"
+                                border="0" usemap="#s">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" height="100%" width="144" valign="top"
+                            style="background-position: right;background-repeat: repeat-y;"
+                            background="./images/2.gif">
+
+
+                            <p class="title">امروز</p>
+                            <div class="menu">
+                                <SCRIPT language=javascript type=text/javascript>
+now = new Date
+if (now.getHours() < 5) {
+document.write("نصف شب بخير")
+}
+else if (now.getHours() < 11) {
+document.write("صبح  بخير")
+}
+else if (now.getHours() < 15) {
+document.write("ظهر بخير")
+}
+else if (now.getHours() < 20) {
+document.write("عصر بخير")
+}
+else if (now.getHours() < 24) {
+document.write("شب بخير")
+}
+</script>
+                            </div><br />
+                            <div class="menu">
+                                <SCRIPT>
+                                    function showdate() {
+                                        week = new Array("يكشنبه", "دوشنبه", "سه شنبه", "چهارشنبه", "پنج شنبه", "جمعه", "شنبه")
+                                        months = new Array("فروردين", "ارديبهشت", "خرداد", "تير", "مرداد", "شهريور", "مهر", "آبان", "آذر", "دي", "بهمن", "اسفند");
+                                        a = new Date();
+                                        d = a.getDay();
+                                        day = a.getDate();
+                                        month = a.getMonth() + 1;
+                                        year = a.getYear();
+
+                                        year = (year == 0) ? 2000 : year;
+                                        (year < 1000) ? (year += 2000) : true;
+
+                                        year -= ((month < 3) || ((month == 3) && (day < 21))) ? 622 : 621;
+
+                                        switch (month) {
+                                            case 1: (day < 21) ? (month = 10, day += 10) : (month = 11, day -= 20); break;
+                                            case 2: (day < 20) ? (month = 11, day += 11) : (month = 12, day -= 19); break;
+                                            case 3: (day < 21) ? (month = 12, day += 9) : (month = 1, day -= 20); break;
+                                            case 4: (day < 21) ? (month = 1, day += 11) : (month = 2, day -= 20); break;
+                                            case 5:
+                                            case 6: (day < 22) ? (month -= 3, day += 10) : (month -= 2, day -= 21); break;
+                                            case 7:
+                                            case 8:
+                                            case 9: (day < 23) ? (month -= 3, day += 9) : (month -= 2, day -= 22); break;
+                                            case 10: (day < 23) ? (month = 7, day += 8) : (month = 8, day -= 22); break;
+                                            case 11:
+                                            case 12: (day < 22) ? (month -= 3, day += 9) : (month -= 2, day -= 21); break;
+                                            default: break;
+                                        }
+                                        document.write(week[d] + " " + day + " " + months[month - 1] + " " + year);
+                                    }
+                                </SCRIPT>
+
+                                <SCRIPT>showdate()</SCRIPT>
+                            </div><br />
+                            <SCRIPT LANGUAGE="JavaScript">
+
+                                var timerID = null;
+                                var timerRunning = false;
+
+                                function stopclock() {
+                                    if (timerRunning)
+                                        clearTimeout(timerID);
+                                    timerRunning = false;
+                                }
+
+                                function showtime() {
+                                    var now = new Date();
+                                    var hours = now.getHours();
+                                    var minutes = now.getMinutes();
+                                    var seconds = now.getSeconds()
+
+                                    var timeValue = "" + ((hours > 12) ? hours - 12 : hours)
+                                    timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+                                    timeValue += ((seconds < 10) ? ":0" : ":") + seconds
+                                    timeValue += (hours >= 12) ? " P.M." : " A.M."
+                                    document.clock.face.value = timeValue;
+
+                                    // you could replace the above with this
+                                    // and have a clock on the status bar:
+                                    // window.status = timeValue;
+
+                                    timerID = setTimeout("showtime()", 1000);
+                                    timerRunning = true;
+                                }
+
+                                function startclock() {
+                                    // Make sure the clock is stopped
+                                    stopclock();
+                                    showtime();
+                                }
+
+                            </SCRIPT>
+                            <div class="menu">
+                                <form name="clock" onSubmit="0">
+                                    <input type="text" name="face" size=13 value="">
+                                    <br /><br />
+                            </div>
+
+
+                            <p class="title">جستجو</p>
+                            <div class="menu">
+                                <FORM name=search onsubmit="return findInPage(this.string.value);">
+                                    <INPUT
+                                        style="BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; FONT-SIZE: 8pt; BORDER-LEFT: #666666 1px solid; BORDER-BOTTOM: #666666 1px solid"
+                                        onchange="n = 0;" size=11 name=string>
+                                    <BR><INPUT
+                                        style="BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; FONT-SIZE: 8pt; BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #ffffff 1px solid; FONT-FAMILY: Tahoma; BACKGROUND-COLOR: #FFD191"
+                                        type=submit value=جستجو در وبلاگ>
+                            </div>
+
+                            <AU_P>
+                                <p class="title"> درباره<br></p>
+                                <div class="menu">
+                                    <*ProfileLink*> <img width="110"
+                                            onerror="this.style.width='0';this.style.border='0'" src="<*PhotoSRC*>"
+                                            style="border:1 black solid" align=absmiddle alt="<*Title*>" vspace=5></a>
+                                        <div style="width:95%;font-family:tahoma;font-size:11;text-align:justify;line-height:1.7"
+                                            dir=rtl>
+                                            <*AboutUs*>
+                                        </div>
+                                </div>
+
+                                <br><br />
+                            </AU_P>
+
+
+                            <p class="title">&nbsp;</p>
+                            <div class="menu">
+                                <a href="http://<*YourSiteName*>.parsiblog.com">صفحه نخست</a><br>
+                                <a href="mailto:<*YourEmail*>">پست الکترونيک</a><br>
+                                <span class=smeno id="profmeno" onmouseover=dochngbacove(profmeno)
+                                    onmouseout=dochngbacout(profmeno) onmousedown=dochngbaccli(profmeno)
+                                    onmouseup=dochngbacout(profmeno)>
+                                    <*ProfileLink*> شناسنامه
+                                        </a>
+                                </span>
+                                <br>
+                                <span class=smeno id="rssmeno" onmouseover=dochngbacove(rssmeno)
+                                    onmouseout=dochngbacout(rssmeno) onmousedown=dochngbaccli(rssmeno)
+                                    onmouseup=dochngbacout(rssmeno)>
+                                    <*RSS*>
+                                </span><br>
+                                <YI_P><a href="ymsgr:sendim?<*YahooID*>" title="وضعيت من در ياهو"> در ياهو <img border=0
+                                            src="http://opi.yahoo.com/online?u=<*YahooID*> &amp;m=g&amp;t=0"
+                                            style="width:0;" onload="this.style.width='';" align=center>
+                                    </a><br><br />
+                            </div>
+                            </YI_P>
+
+
+                            <br>
+                            <p class="title"> بازديدهاي وبلاگ <br></p>
+                            <div class="menu">
+                                بازديد امروز: <font color="#FFD191">
+                                    <*DailyHit*>
+                                </font>
+                                <hr width="75%">
+                                بازديد ديروز: <font color="#FFD191">
+                                    <*YesHit*>
+                                </font>
+                                <hr width="75%">
+                                كل بازديد :<font color="#FFD191">
+                                    <*WebLogHit*>
+                                </font><br><br />
+                            </div>
+
+                            <br>
+                            <p class="title"> اوقات شرعي<br></p>
+                            <div class="menu">
+                                <iframe
+                                    src="http://AzanTimes.parsiblog.com/Times.aspx?CityID=26&Bcolor=#fff0f5&Mcolor=darkgreen&Tcolor=red&Acolor=blue"
+                                    frameborder=0 width=70% height=17px scrolling=no></iframe><br>
+                                <br />
+                            </div>
+
+                            <TL_P>
+                                <br>
+                                <p class="title"> نوشته هاي پيشين<br></p>
+                                <div class="menu">
+                                    <*TitleList*><br><br />
+                                </div>
+                            </TL_P>
+
+                            <AR_P>
+                                <br>
+                                <p class="title"> آرشيو<br></p>
+                                <div class="menu">
+                                    <*Archive*><br><br />
+                                </div>
+                            </AR_P>
+
+
+                            <WS_P>
+                                <br>
+                                <p class="title"> آرشيو موضوعي <br></p>
+                                <div class="menu">
+                                    <*WeblogSubject*>
+                                        <br><br />
+                                </div>
+                            </WS_P>
+
+
+                            <YL_P>
+                                <br>
+                                <p class="title"> لوگوي وبلاگ من<br></p>
+                                <div class="menu">
+                                    <img width=110 src="http://<*YourLogoURL*>"
+                                        style="BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid"
+                                        align=absMiddle alt="<*Title*>" vspace=5><br />
+                                    <br>
+                                    <span id=inbologo>
+                                        <input id=LogoUrl
+                                            value='<A href="http://<*YourSiteName*>.parsiblog.com" target=_blank><img width=0 onload="this.width=110; this.style.borderWidth=1" src="http://<*YourLogoURL*>" style="border:0 black solid" align=absmiddle alt="<*Title*>" vspace=5></A>'
+                                            style="width:100"
+                                            onfocus="this.style.borderColor='maroon'; this.style.backgroundColor='#FFFAED'; this.select()"
+                                            onblur="this.style.borderColor='gray'; this.style.backgroundColor='#F5F5F5'"
+                                            autocomplete=off contenteditable=true NAME="LogoUrl"><br>
+                                        <Div style=" background-color:E0FFE0; border: 1 #b0bbcf solid;  width:100; height:20px; cursor:hand"
+                                            title="ارسال محتواي جعبه‏متن به كليپ‏بورد" onclick='toClip(LogoUrl.value)'>
+                                        </Div>
+                                        <Div style="background-color:F8FFF0; border: 1 #b0bbcf solid; border-width:1; width:100; height:10px; cursor:hand"
+                                            title="ارسال نشاني لوگو به كليپ‏بورد" onclick='toClip("<*YourLogoURL*>")'>
+                                        </Div>
+                                    </span>
+                                </div>
+                                <br><br /><br /><br />
+                            </YL_P>
+
+
+                            <DL_P>
+                                <br>
+                                <p class="title">پيوندهاي روزانه<br></p>
+                                <div class="menu">
+                                    <*DayList*><br>
+                                        <input id=dlsrc
+                                            value="<iframe src=http://<*YourSiteName*>.ParsiBlog.com/links frameborder=1 width=100% height=200px scrolling=auto></iframe>"
+                                            style="width:110" onfocus="this.select()" autocomplete=off
+                                            contenteditable=true />
+                                        <input type="button" value="C" title="کپي آدرس لينک باکس" style="cursor:hand"
+                                            onclick=toClip(dlsrc.value);>
+                                        <br><br />
+                                </div>
+                            </DL_P>
+
+
+                            <GL_P>
+                                <br>
+                                <p class="title"> پيوندها<br></p>
+                                <div class="menu">
+                                    <marquee style="padding-right:10px;" width="140" height="200" dir=rtl scrolldelay=1
+                                        scrollamount=2 direction="up" onmouseover='this.scrollAmount=0;'
+                                        onmouseout='this.scrollAmount=2;'>
+                                        <*GuestsList*>
+                                    </marquee>
+                                    <br>
+                                </div>
+                            </GL_P>
+
+                            <LGL_P>
+                                <br>
+                                <p class="title"> لوگوي دوستان<br></p>
+                                <div class="menu">
+                                    <div align="center">
+                                        <MARQUEE width="140" onmouseover=this.stop() onmouseout=this.start()
+                                            scrollamount="1" scrolldelay="1" direction=up height="200" align="middle">
+                                            <center>
+                                                <*LogoGuestsList*>
+                                            </center>
+                                        </marquee>
+                                    </div>
+                                </div>
+                                <br>
+                            </LGL_P>
+
+                            <MS_P>
+                                <br>
+                                <p class="title">موسيقي وبلاگ<br></p>
+                                <div class="menu">
+                                    <embed src="<*MusicSRC*>" style="border:1 black solid; background-color:#000000;"
+                                        title="!در حال خواندن وبلاگ من، موسيقي مورد علاقه‏ام را بشنويد" width="130"
+                                        height="50" type="application/x-mplayer2" autostart="true" loop="true"
+                                        SHOWSTATUSBAR="1" ShowPositionControls="0"></embed>
+                                    <br>
+                                </div>
+                            </MS_P>
+
+                            <SL_P>
+                                <br>
+                                <p class="title"> فهرست موضوعي<br></p>
+                                <div class="menu">
+                                    <*NoteSubList*>
+                                        <br><br />
+                                </div>
+                            </SL_P>
+
+
+                            <br>
+                            <p class="title">جستجو در وبلاگ<br></p>
+                            <div class="menu">
+                                جستجو: <input lang=fa
+                                    style="width:93; text-align:right; font-family:tahoma; padding-top:0"
+                                    onfocus="this.style.borderColor='maroon'; this.style.backgroundColor='#FFFAED'; this.select()"
+                                    onblur="this.style.borderColor='gray'; this.style.backgroundColor='#F5F5F5'"
+                                    onkeypress="if (event.keyCode==13){ document.all.besearchgif.click(); return false; }"
+                                    id=besearch NAME="besearch">
+                                <img src=http://www.parsiblog.com/IMGs/arr_whois.gif border=0
+                                    style="cursor:hand; position:absolute; margin-top:13; margin-left:-5"
+                                    onclick='srchWIN("Search.aspx",document.all.besearch.value,"<*YourSiteName*>")'
+                                    id=besearchgif>
+                                <br /><br /><br />
+                            </div>
+
+
+                            <br>
+                            <p class="title">اشتراك در خبرنامه<br></p>
+                            <div class="menu">
+                                <*SubmitMail*><br />
+                            </div>
+                            <br>
+
+                            <br>
+                            <p class="title">طراح قالب</p>
+                            <div class="menu">
+                                <a href='http://www.somayeh-naz.BLOGFA.com/' target='_blank'><img border='0'
+                                        src="http://gapple.persiangig.com/image/weblog%20me/logo_002.gif"
+                                        alt="طراحي قالب-کدهاي html"></a><br>
+                                <center><a href="Http://GApplle.com"
+                                        style="COLOR:#222902;BACKGround-COLOR:#E6E7E8">Green applE</a></center><br>
+
+                                <br>
+                                <center><a
+                                        style="color: #6e3900; text-decoration: none; font-family: Arial; font-size: 8pt; border: 1px solid #FF9955;  background-color: #fad698"
+                                        href="<-BlogXmlLink->">&nbsp;RSS&nbsp;</a></center><br><br>
+                            </div>
+
+
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="144" height="114" style="background-position: right;background-repeat: no-repeat;"
+                            background="./images/4.gif"></td>
+                    </tr>
+                    <tr>
+                        <td width="144" height="9"></td>
+                    </tr>
+                </table>
+            </td>
+            <td width="509">
+                <table width="509" height="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="509" height="207"><map name="s3">
+                                <area alt="HOME" shape="poly" coords="254,52,415,28,423,88,388,168,244,171,233,126"
+                                    href="http://<*YourSiteName*>.parsiblog.com">
+                            </map>
+                            <img src="./images/5.gif" width="509" height="207"
+                                border="0" usemap="#s3">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="88" width="509" bgcolor="#ffd191"
+                            background="./images/7.gif"></td>
+                    </tr>
+                    <tr>
+                        <td valign="top" height="100%" width="509" bgcolor="#ffd191" dir="rtl"
+                            style="padding-right:30px;padding-left:17px;background-repeat: repeat-y;"
+                            background="./images/8.gif">
+                            <*ParsiBlog*>
+                                <div class="PostTitle"><img
+                                        src="./images/10.gif">&nbsp;<font
+                                        style="background-color: #E6E7E8;">&nbsp;<*NoteTitle*>&nbsp;</font><br /><br />
+                                </div>
+                                <div class="postbody">
+                                    <*NoteText*><br /><br />
+                                </div>
+                                <div class="postdesc">
+                                    <*YourName*> ::: <*NoteDate:3*>::: <*NoteTime:2*>:::
+                                                <*NoteHitLink*> نظرات ديگران: <*NoteHit*></A> نظر
+                                </div>
+                                <hr color="#C4151C" width="75%" align="center">
+                            </*ParsiBlog* />
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="509" height="141" bgcolor="#ffd191"><map name="s2">
+                                <area alt="طراح قالب" shape="poly" coords="2,117,103,110,104,127,2,134"
+                                    href="http://gapplle.com">
+                            </map>
+                            <img src="./images/6.gif" width="509" height="141"
+                                border="0" usemap="#s2">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td align="right" valign="top" width="126" style="padding-top:290px;background-repeat:no-repeat"
+                background="./images/9.gif">
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td style="padding-bottom:10px">
+                            <a href="http://ashko-labkhand.blogfa.com"><img alt="زرين" height="50" width="50"
+                                    src="http://ashko-labkhand.blogfa.com/Photo/a/ashko-labkhand.jpg"></a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom:12px">
+                            <a href="http://bazkhan.parsiblog.com"><img alt="آسمان" height="50" width="50"
+                                    src="http://parsiblog.com/FirendsAlbum/bazkhan/myProfile.gif"></a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom:20px">
+                            <a href="http://abjikoochike.parsiblog.com"><img alt="آبجي کوچيکه" height="50" width="50"
+                                    src="http://parsiblog.com/PhotoAlbum/abjikoochike/abjikoochikelogo.JPG"></a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://nazi.parsiblog.ir"><img alt="نازنين" height="50" width="50"
+                                    src="http://parsiblog.com/PhotoAlbum/nazi/Thumb_1026.jpg"></a><br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td height="50"></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
