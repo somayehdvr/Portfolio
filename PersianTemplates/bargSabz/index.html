@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="alternate" type="application/rss+xml" title="<-BlogTitle->" href="<-BlogXmlLink->" />
+    <link rel="alternate" type="application/rss+xml"/>
     <meta name="GENERATOR" content="BlogFa.com">
     <title>
         <-BlogTitle->
@@ -133,36 +133,6 @@
             text-decoration: none;
         }
     </style>
-    <script language="javascript">
-        function GetBC(lngPostid) {
-            intTimeZone ="<-BlogTimeZone->";
-            strBlogId = "<-BlogId->";
-            intCount = -1;
-            strResult = "";
-            try {
-                for (i = 0; i < BlogComments.length; i += 2) {
-                    if (BlogComments[i] == lngPostid)
-                        intCount = BlogComments[i + 1];
-                }
-            } catch (e) {
-            }
-            if (intCount == -1) strResult = "آرشيو نظرات";
-            if (intCount == 0) strResult = "نظر بدهيد";
-            if (intCount == 1) strResult = "يک نظر";
-            if (intCount > 1) strResult = intCount + " نظر";
-
-            strUrl = "http://commenting.blogfa.com/?blogid=" + strBlogId + "&postid=" + lngPostid + "&timezone=" + intTimeZone;
-            strResult = "<a href=\"javascript:void(0)\" onclick=\"javascript:window.open('" + strUrl + "','blogfa_comments','status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no ,width=500px,height=500px')\" >" + strResult + " </a>";
-
-            document.write(strResult);
-        }
-
-        function OpenLD() {
-            window.open('LinkDump.aspx', 'blogfa_ld', 'status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no ,width=500px,height=500px');
-            return true;
-        }
-
-    </script>
 
 </head>
 
@@ -195,14 +165,13 @@
                                                     </BlogExtendedPost>
                                             </div>
                                             <div class="postdesc">
-                                                <a href="<-PostLink->">+</a>
+                                                <a>+</a>
                                                 نوشته شده در &nbsp;<-PostDate->ساعت&nbsp;<-PostTime->&nbsp; توسط&nbsp;
                                                         <-PostAuthor->&nbsp;
                                                             <BlogComment>
                                                                 |&nbsp;
                                                                 <span dir="rtl">
-                                                                    <script
-                                                                        type="text/javascript">GetBC('< -PostId ->');</script>
+                                                                    
                                                                 </span>
                                                             </BlogComment>
                                             </div>
@@ -221,7 +190,7 @@
                                 <BlogLinksBlock>
                                     <HR style="WIDTH: 66px; COLOR: #ffffff; HEIGHT: 1px">
                                     <BlogLinks>
-                                        <a href="<-LinkUrl->" target="_blank">
+                                        <a target="_blank">
                                             <-LinkTitle->
                                         </a><br>
                                     </BlogLinks>
@@ -231,7 +200,7 @@
                                 <BlogAuthorsBlock>
                                     <HR style="WIDTH: 66px; COLOR: #ffffff; HEIGHT: 1px">
                                     <BlogAuthors>
-                                        <a href="<-AuthorLink->">
+                                        <a>
                                             <-AuthorName->
                                         </a><br>
                                     </BlogAuthors>
@@ -241,7 +210,7 @@
                                 <BlogCategoriesBlock>
                                     <HR style="WIDTH: 66px; COLOR: #ffffff; HEIGHT: 1px">
                                     <BlogCategories>
-                                        <a href="<-CategoryLink->">
+                                        <a>
                                             <-CategoryName->
                                         </a><br>
                                     </BlogCategories>
@@ -250,7 +219,7 @@
 
                                 <HR style="WIDTH: 66px; COLOR: #ffffff; HEIGHT: 1px">
                                 <BlogArchive>
-                                    <a href="<-ArchiveLink->">
+                                    <a>
                                         <-ArchiveTitle->
                                     </a><br>
                                 </BlogArchive>
@@ -259,7 +228,7 @@
                                 <BlogPreviousItemsBlock>
                                     <HR style="WIDTH: 66px; COLOR: #ffffff; HEIGHT: 1px">
                                     <BlogPreviousItems>
-                                        <a href="<-PostLink->" title="<-PostDate->">
+                                        <a>
                                             <-PostTitle->
                                         </a><br>
                                     </BlogPreviousItems>
@@ -270,7 +239,7 @@
                                     <HR style="WIDTH: 66px; COLOR: #ffffff; HEIGHT: 1px">
                                     <a href="javascript:void(0)" onclick="OpenLD();">Daily Links Archive</a><br>
                                     <BlogLinkDump>
-                                        <a href="<-LinkUrl->" target="_blank" title="<-LinkDescription->">
+                                        <a>
                                             <-LinkTitle->
                                         </a><br>
                                     </BlogLinkDump>
@@ -278,11 +247,11 @@
                                 </BlogLinkDumpBlock>
 
                                 <HR style="WIDTH: 66px; COLOR: #ffffff; HEIGHT: 1px">
-                                <A href="<-BlogArchiveLink->">
+                                <A>
                             <li>Archive</A>
-                                <A href="mailto:<-BlogEmail->">
+                                <A>
                             <li>Email</A>
-                                <A href="<-BlogUrl->">
+                                <A>
                             <li>Home</A>
 
                                 <HR style="WIDTH: 66px; COLOR: #ffffff; HEIGHT: 1px">
