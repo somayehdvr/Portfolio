@@ -1,0 +1,582 @@
+/* Universal Styles */
+body {
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(49 49 49);/*grey*/
+  }
+  /* fade in animation effect for the header image for different browsers */
+  .img {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  /* Mobile Styles */
+  @media only screen and (max-width: 400px) {
+    body {
+      margin: 5px 0; /* in order to have a shadow*/
+    }
+    a:link{
+      color: white;
+      text-decoration: none; /* no underlined */ 
+      font-weight: normal;
+    }
+  a:hover {
+    color:black;
+    background-color: rgb(251 183 54); /* yellow */
+    padding: 5px 0;
+  }
+    .button {
+      background-color: #2b00cc;
+      color: #FFFFFF;
+      text-align: center;
+      transition-duration: 0.4s;
+      margin: 5px 0;
+      font-size: 15px;
+      cursor: pointer;
+      border-radius: 2px;
+      border: 1px solid ;
+    }
+    .button:hover {
+      background-color: rgb(251 183 54); /* yellow */
+      color: black;
+    }
+  .footer-3 a:hover{
+    padding: 5px 5px;
+  }
+    .page {
+      width: 95%; /* for shadow */
+      margin: 0 auto;
+      background-color: #2b00cc; /* blue */
+      padding:0 5px;
+      box-shadow: 0px 0px 5px 5px rgb(30 30 30); /* shadow for page */
+    }
+    .logo {
+      width: 30%;
+      text-align: left;
+      font-weight: bold;
+      display: inline-block;
+      font-size: 10px;
+    }
+    .nav {
+      width: 50%;
+      text-align: center;
+      font-size: 10px;
+      font-weight: bold;
+      display: inline-block;
+    }
+    span {
+      margin:5px;
+    }
+    .h-subscribe {
+      width: 15%;
+      text-align: left;
+      font-weight: bold;
+      display: inline-block;
+    }
+      .h-subscribe .button {
+      background-color:  rgb(251 183 54); /* yellow */
+      color: black;
+      font-weight: bold;
+      padding: 10px 5px;
+      text-align: center;
+      transition-duration: 0.5s; /* changing color after smoothly */
+      margin: 0px;
+      font-size: 10px;
+      cursor: pointer;
+      border-radius: 2px;
+      border: 1px solid;
+    }
+    .h-subscribe .button:hover {
+      background-color: #2b00cc; /* blue */
+      color: white;
+    }
+    .header-1 {
+      text-align: left;
+      font-size: 30px;
+      font-weight: bold;
+      padding: 20px 0;
+      border-top: 1px solid grey;
+    }
+    .header-2 {
+      float: right;
+      text-align: left;
+      font-size: 15px;
+      padding: 20px 0;
+      border-top: 1px solid grey;
+    }
+    figure {
+      margin: 0;
+      text-align:center;
+    }
+    .img{
+      width:100%;
+    }
+    .header-img p {
+      text-align:left;
+      font-size: 10px;
+      color: #ccc; /* grey */
+      width:300px;
+    }
+    .content-1 {
+      float: left;
+      text-align: left;
+      font-size: 15px;
+      padding: 30px 0;
+    }
+      .content-2 {
+      float: right;
+      text-align: left;
+      font-size: 15px;
+      padding: 0 0 30px 0;
+    }
+      .f-subscribe {
+      float: left;
+      text-align: left;
+    }
+    .f-subscribe p {
+      font-size: 0.3em;
+      padding: 0;
+      margin: 0;
+    }
+    input[type=text] {
+    width: 50%;
+    display: inline-block;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: #2b00cc; /* blue */
+  }
+      .share {
+      padding-top:10px;
+      float: right;
+      text-align: left;
+      font-size: 15px;
+    }
+    p {
+      padding: 0 10px;
+      margin: 0;
+    }
+    .breaker {
+      clear:both;
+      border-bottom: 1px solid grey;
+      height: 30px;
+    }
+    .footer-1 {
+      text-align: left;
+      display: inline-block;
+      font-size: 10px;
+    }
+    .footer-2 {
+      width: 100%;
+      text-align: center;
+      display: inline-block;
+      font-size: 10px;
+    }
+    .footer-3 {
+      width: 100%;
+      text-align: right;
+      display: inline-block;
+      font-size: 10px;
+    }
+    .fa {
+      border-left: 1px solid grey;
+      padding: 5px 5px;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+      margin: 10px 0;
+    }
+    a:link{
+      color: white;
+      text-decoration: none;
+      font-weight: normal;
+    }
+  a:hover {
+    color:black;
+    background-color: rgb(251 183 54);
+    padding: 5% 0;
+  }
+    .page {
+      width: 95%;
+      margin: 0 auto;
+      background-color: #2b00cc;
+      padding:0 10px;
+      box-shadow: 0px 0px 10px 5px rgb(30 30 30);
+    }
+    .logo {
+      width: 20%;
+      text-align: left;
+      font-weight: bold;
+      display: inline-block;
+      font-size: 0.7em;
+    }
+    .nav {
+      width: 55%;
+      text-align: center;
+      font-size: 0.7em;
+      font-weight: bold;
+      display: inline-block;
+    }
+    span {
+      margin:7px;
+    }
+    .h-subscribe {
+      text-align: right;
+      font-weight: bold;
+      display: inline-block;
+    }
+      .h-subscribe .button {
+      background-color:  rgb(251 183 54);
+      color: black;
+      font-weight: bold;
+      padding: 10% 5px;
+      text-align: right;
+      transition-duration: 0.5s;
+      margin: 0px;
+      font-size: 0.8em;
+      cursor: pointer;
+      border-radius: 2px;
+      border: 1px solid;
+      width:100%;
+    }
+    .h-subscribe .button:hover {
+      background-color: #2b00cc;
+      color: white;
+    }
+    .header-1 {
+      width: 50%;
+      float: left;
+      text-align: left;
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 5% 0;
+      border-top: 1px solid grey;
+    }
+    .header-2 {
+      width: 50%;
+      float: right;
+      text-align: left;
+      font-size: 1em;
+      padding: 5% 0;
+      border-top: 1px solid grey;
+    }
+    figure {
+      margin: 0;
+      text-align:center;
+    }
+    .header-img p {
+      text-align:left;
+      font-size: 0.5em;
+      color: #ccc;
+    }
+    img{
+      max-width:100%;
+    }
+    .content-1 {
+      width: 50%;
+      float: left;
+      text-align: left;
+      font-size: 1em;
+      padding: 10% 0;
+    }
+      .content-2 {
+      width: 50%;
+      float: right;
+      text-align: left;
+      font-size: 1em;
+      padding: 10% 0;
+    }
+      .f-subscribe {
+      width: 50%;
+      float: left;
+      text-align: left;
+      font-size: 0.7em;
+    }
+    .f-subscribe p {
+      font-size: 0.6em;
+      padding: 0;
+      margin: 0;
+    }
+    input[type=text] {
+    width: 60%;
+    padding: 4%;
+    display: inline-block;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    font-size: 0.7em;
+    background-color: #2b00cc;
+  }
+    .f-subscribe .button {
+      width:35%;
+    }
+      .share {
+      width: 50%;
+      float: right;
+      text-align: left;
+      font-size: 0.7em;
+      padding-top: 2%;
+    }
+    .button {
+      background-color: #2b00cc;
+      color: #FFFFFF;
+      padding: 4% 5%;
+      text-align: center;
+      transition-duration: 0.4s;
+      margin: 5% 0;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 2px;
+      border: 1px solid ;
+      width: 40%;
+    }
+    .button:hover {
+      background-color: rgb(251 183 54);
+      color: black;
+    }
+    p {
+      padding: 0 1%;
+      margin: 0;
+    }
+    .breaker {
+      clear:both;
+      border-bottom: 1px solid grey;
+      height: 10%;
+    }
+    .footer-1 {
+      width: 25%;
+      text-align: left;
+      display: inline-block;
+      font-size: 0.5em;
+    }
+    .footer-2 {
+      width: 45%;
+      text-align: center;
+      display: inline-block;
+      font-size: 0.5em;
+    }
+    .footer-3 {
+      width: 25%;
+      text-align: right;
+      display: inline-block;
+      font-size: 0.5em;
+    }
+    .footer-3 a:hover{
+    padding: 5% 3%;
+  }
+    .fa {
+      border-left: 1px solid grey;
+      padding: 5% 3%;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+    body {
+      margin: 10px 0;
+    }
+    a:link{
+      color: white;
+      text-decoration: none;
+      font-weight: normal;
+    }
+  a:hover {
+    color:black;
+    background-color: rgb(251 183 54);
+    padding: 10px 0;
+  }
+  .footer-3 a:hover{
+    padding: 10px 5px;
+  }
+    .page {
+      width: 960px;
+      margin: 0 auto;
+      background-color: #2b00cc;
+      padding:0 30px;
+      box-shadow: 0px 0px 10px 5px rgb(30 30 30);
+    }
+    .logo {
+      width: 33%;
+      text-align: left;
+      font-weight: bold;
+      display: inline-block;
+      font-size: 15px;
+    }
+    .nav {
+      width: 33%;
+      text-align: center;
+      font-size: 15px;
+      font-weight: bold;
+      display: inline-block;
+    }
+    span {
+      margin:7px;
+    }
+    .h-subscribe {
+      width: 33%;
+      text-align: right;
+      font-weight: bold;
+      display: inline-block;
+    }
+      .h-subscribe .button {
+      background-color:  rgb(251 183 54);
+      color: black;
+      font-weight: bold;
+      padding: 20px 5px;
+      text-align: center;
+      transition-duration: 0.5s;
+      margin: 0px;
+      font-size: 15px;
+      cursor: pointer;
+      border-radius: 2px;
+      border: 1px solid;
+      width: 35%;
+    }
+    .h-subscribe .button:hover {
+      background-color: #2b00cc;
+      color: white;
+    }
+    .header-1 {
+      width: 50%;
+      float: left;
+      text-align: left;
+      font-size: 50px;
+      font-weight: bold;
+      padding: 60px 0;
+      border-top: 1px solid grey;
+    }
+    .header-2 {
+      width: 50%;
+      float: right;
+      text-align: left;
+      font-size: 21px;
+      padding: 70px 0;
+      border-top: 1px solid grey;
+    }
+      figure {
+      margin: 0;
+      text-align:center;
+    }
+    .header-img p {
+      text-align:left;
+      font-size: 10px;
+      color: #ccc;
+    }
+    .content-1 {
+      width: 50%;
+      float: left;
+      text-align: left;
+      font-size: 21px;
+      padding: 70px 0;
+    }
+      .content-2 {
+      width: 50%;
+      float: right;
+      text-align: left;
+      font-size: 21px;
+      padding: 70px 0;
+    }
+      .f-subscribe {
+      width: 50%;
+      float: left;
+      text-align: left;
+      font-size: 21px;
+    }
+    .f-subscribe p {
+      font-size: 10px;
+      padding: 0;
+      margin: 0;
+    }
+    input[type=text] {
+    width: 60%;
+    padding: 15px;
+    display: inline-block;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    font-size: 20px;
+    background-color: #2b00cc;
+  }
+    .f-subscribe .button {
+      width:35%;
+    }
+      .share {
+      width: 50%;
+      float: right;
+      text-align: left;
+      font-size: 20px;
+      padding-top: 10px;
+    }
+    .button {
+      background-color: #2b00cc;
+      color: #FFFFFF;
+      padding: 15px 30px;
+      text-align: center;
+      transition-duration: 0.4s;
+      margin: 16px 0;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 2px;
+      border: 1px solid ;
+      width: 49%;
+    }
+    .button:hover {
+      background-color: rgb(251 183 54);
+      color: black;
+    }
+    p {
+      padding: 0 10px;
+      margin: 0;
+    }
+    .breaker {
+      clear:both;
+      border-bottom: 1px solid grey;
+      height: 70px;
+    }
+    .footer-1 {
+      width: 33%;
+      text-align: left;
+      display: inline-block;
+      font-size: 15px;
+    }
+    .footer-2 {
+      width: 33%;
+      text-align: center;
+      display: inline-block;
+      font-size: 11px;
+    }
+    .footer-3 {
+      width: 33%;
+      text-align: right;
+      display: inline-block;
+      font-size: 15px;
+    }
+    .fa {
+      border-left: 1px solid grey;
+      padding: 10px 5px;
+    }
+  }
